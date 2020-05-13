@@ -7,3 +7,5 @@ class Game
     @random_num(num) == true
   end
 end
+
+hey there
