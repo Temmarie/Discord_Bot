@@ -3,7 +3,7 @@ require 'discordrb'
 # require_relative '../lib/players.rb'
 
 module Bot
-  bot = Discordrb::Bot.new token: 'token_key'
+  bot = Discordrb::Bot.new token: 'NzA2Nzk0MTEwMzA4MDU3MTMw.Xrkr_g.7vauFNxaDbUjjRK8d_Sfgk8Cm8Q'
 
   bot.message(start_with: '!game') do |event|
     random_num = rand(1..5)
@@ -29,7 +29,7 @@ module Bot
       if info == info_num
         info_event.respond 'I am gaming bot that plays guessing games and gives compliments.'
       else
-        info_event.respond ( info > info_num ? 'New Updates coming soon!' : 'Hello!')
+        info_event.respond(info > info_num ? 'New Updates coming soon!' : 'Hello!')
         false
       end
     end
@@ -40,7 +40,7 @@ module Bot
     event.user.await(:name) do |name_event|
       name = name_event.message.content.to_s
 
-      name_event.respond (name + ' you are so cool!')
+      name_event.respond(name + ' you are so cool!')
     end
     event.respond 'Enter your name:'
   end
