@@ -3,7 +3,7 @@ require 'discordrb'
 # require_relative '../lib/players.rb'
 
 module Bot
-  bot = Discordrb::Bot.new token: 'NzA2Nzk0MTEwMzA4MDU3MTMw.Xrkr_g.7vauFNxaDbUjjRK8d_Sfgk8Cm8Q'
+  bot = Discordrb::Bot.new token: 'token_key'
 
   bot.message(start_with: '!game') do |event|
     random_num = rand(1..5)
