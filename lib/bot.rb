@@ -3,12 +3,7 @@ require 'discordrb'
 require_relative '../lib/calc.rb'
 require_relative '../lib/add.rb'
 
-<<<<<<< HEAD
 class Bot
-=======
-module Bot
-  bot = Discordrb::Bot.new token: 'new_token'
->>>>>>> ad650cad9b0edeee62b6a142134947bf993f900f
 
   def initialize(token_key)
     @bot = Discordrb::Bot.new token: token_key
