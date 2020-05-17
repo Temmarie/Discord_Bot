@@ -1,4 +1,3 @@
-
 require 'discordrb'
 require_relative '../lib/calc.rb'
 require_relative '../lib/add.rb'
