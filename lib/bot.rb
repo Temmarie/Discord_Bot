@@ -11,7 +11,7 @@ class Bot
 
   def guess_game
     @bot.message(start_with: '!guess') do |event|
-      guess_word = "Wolfe"
+      guess_word = 'Wolfe'
 
       event.user.await(:guess) do |guess_event|
         guess = guess_event.message.content.to_s
@@ -20,7 +20,7 @@ class Bot
           guess_event.respond 'You Win! it was ' + guess_word
         elsif guess != guess_word
           guess_event.respond 'Oops, wrong!'
-          guess_event.respond 'Enter !guess to play again!' 
+          guess_event.respond 'Enter !guess to play again!'
         end
       end
       event.respond 'Welcome to guess game!'
@@ -53,9 +53,10 @@ class Bot
       info_num = 1
       event.user.await(:info) do |info_event|
         info = info_event.message.content.to_i
-  
+
         if info == info_num
-          info_event.respond 'I am gaming bot that plays guessing games,tells the time, calculates your birth year and gives compliments.'
+          info_event.respond 'I am gaming bot that plays guessing games,tells the time,
+          calculates your birth year and gives compliments.'
         else
           info_event.respond(info > @info_num ? 'New Updates coming soon!' : 'Hello!')
           false
@@ -69,7 +70,7 @@ class Bot
     @bot.message(start_with: '!compliment') do |event|
       event.user.await(:name) do |name_event|
         name = name_event.message.content.to_s
-        
+
         name_event.respond(name + ' you are so cool!')
       end
       event.respond 'Enter your name:'
@@ -91,8 +92,7 @@ class Bot
     end
   end
 
-
-  def start 
+  def start
     @bot.run
   end
 end
