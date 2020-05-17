@@ -17,12 +17,16 @@ This Is A Discord Bot Made With The Ruby Language and DiscordRb Framework
 - Open Terminal
 - CD to the folder
 - enter "bundle install"
-- enter "./lib/bot.rb"
+- enter "bin/main.rb"
 
 
 
 ## Features
-- !game : starts a guessing game where you pick numbers at random and guess if the number is right.
+- !guess : starts a guessing game where you guess what the hidden word is.
+- !date : calculates your year of birth when you input your current age.
+- !time : tells you the current time.
+- !about : gives info about the bot.
+- !add : sums up numbers given by the user.
 - !compliment: is a game where you input a name and get a compliment.
 - !about : gives information about the bot and it's features
 
