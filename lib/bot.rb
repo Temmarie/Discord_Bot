@@ -4,7 +4,6 @@ require_relative '../lib/calc.rb'
 require_relative '../lib/add.rb'
 
 class Bot
-
   def initialize(token_key)
     @bot = Discordrb::Bot.new token: token_key
     @time = Time.new
