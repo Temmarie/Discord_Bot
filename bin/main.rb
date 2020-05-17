@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+
 require_relative '../lib/bot.rb'
 bot = Bot.new('token_key')
 
