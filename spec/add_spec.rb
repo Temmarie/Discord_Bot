@@ -18,7 +18,7 @@ RSpec.describe Addition do
 
   describe '#result' do
     it 'returns sum result' do
-      num.age(10)
+      num.add(10)
       expect(num.result).to eql(10)
     end
   end
