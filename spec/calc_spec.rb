@@ -1,5 +1,5 @@
 # ./spec/calc_spec.rb
-require './lib/calc.rb'
+require_relative '../lib/calc.rb'
 
 RSpec.describe Calculate do
   let(:present_year) { Calculate.new }

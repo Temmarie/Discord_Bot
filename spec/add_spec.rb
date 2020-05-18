@@ -1,8 +1,8 @@
 # ./spec/add_spec.rb
-require './lib/add.rb'
+require_relative '../lib/add.rb'
 
 RSpec.describe Addition do
-  let(:num) { Addition.new }
+  let(:num) {Addition.new }
   describe '#initialize' do
     it 'initializes with a num variable assigned a value 0' do
       expect(num.result).to eql(0)
@@ -10,16 +10,17 @@ RSpec.describe Addition do
   end
 
   describe '#add' do
-    it 'adds the user input to the variable num' do
-      num.add(15)
-      expect(num.result).to eql(15)
+    it 'adds the user_inputs and outputs the result' do
+      num.add(12)
+      expect(num.result).to eql(12)
     end
   end
 
   describe '#result' do
-    it 'returns the result of the sum' do
-      num.add(9)
-      expect(num.result).to eql(9)
+    it 'returns sum result' do
+      num.age(10)
+      expect(num.result).to eql(10)
     end
   end
+
 end
