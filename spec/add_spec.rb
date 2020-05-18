@@ -2,7 +2,7 @@
 require_relative '../lib/add.rb'
 
 RSpec.describe Addition do
-  let(:num) {Addition.new }
+  let(:num) { Addition.new }
   describe '#initialize' do
     it 'initializes with a num variable assigned a value 0' do
       expect(num.result).to eql(0)
@@ -22,5 +22,4 @@ RSpec.describe Addition do
       expect(num.result).to eql(10)
     end
   end
-
 end
