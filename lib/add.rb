@@ -1,5 +1,5 @@
 class Addition
-  def initiallize
+  def initialize
     @num = 0
   end
 

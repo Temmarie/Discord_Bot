@@ -10,14 +10,15 @@ This Is A Discord Bot Made With The Ruby Language and DiscordRb Framework
 - [Discordrb](https://github.com/discordrb/discordrb)
 
 
-## Usage
-- [Make a Discord App/Bot](https://github.com/SinisterRectus/Discordia/wiki/Setting-up-a-Discord-application)
-- invite it to your server
-- Open bin/main.rb and insert your token on line 2 (read mode about the discord token [Here](https://www.writebots.com/discord-bot-token/))
+## How to use
+- Create a Discord Account [here](https://discord.com/register)
+- Create an application in the [development portal](https://discordapp.com/developers/applications/)
+- invite it to your server,see how to do it [here](https://beebom.com/how-add-bots-discord-server/)
+- Open bin/main.rb and insert your token on line 4 (read more about the discord token [Here](https://www.writebots.com/discord-bot-token/))
 - Open Terminal
 - CD to the folder
 - enter "bundle install"
-- enter "bin/main.rb"
+- enter "./bin/main.rb"
 
 
 
